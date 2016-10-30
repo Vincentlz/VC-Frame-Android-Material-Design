@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">VC ToolBar</string>
 
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">设置</string>
     <string name="drawer_open">Open navigation drawer</string>
 
     <!-- Description of the icon that closes the navigation drawer, used by accessibility. -->

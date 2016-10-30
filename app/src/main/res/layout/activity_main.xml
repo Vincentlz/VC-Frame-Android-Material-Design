@@ -36,7 +36,7 @@
                 android:layout_height="wrap_content"
                 tools:context=".MainActivity" />
         </LinearLayout>
-
+<!--侧滑菜单-->
         <LinearLayout
             android:id="@+id/left"
             android:layout_width="match_parent"
@@ -44,8 +44,10 @@
             android:layout_gravity="start"
             android:background="#fff"
             android:orientation="vertical" >
-
+<!--个人信息-->
             <LinearLayout
+                android:background="@drawable/side_nav_bar"
+                android:padding="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
@@ -75,6 +77,76 @@
                         android:text="董事长"
                         android:textSize="18sp" />
                 </LinearLayout>
+            </LinearLayout>
+<!--条目-->
+            <LinearLayout
+                android:id="@+id/nav_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="20dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/ic_menu_gallery"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="每日精选"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/nav_manage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/ic_menu_manage"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="工具"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:padding="10dp"
+                android:background="#dddddd"/>
+            <LinearLayout
+                android:id="@+id/nav_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="20dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/ic_menu_send"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="关于"/>
             </LinearLayout>
         </LinearLayout>
     </android.support.v4.widget.DrawerLayout>
